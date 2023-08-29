@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rproduct.proto\x12\x07product\"\x07\n\x05\x45mpty\"V\n\nPagination\x12\r\n\x05total\x18\x01 \x01(\x04\x12\x10\n\x08per_page\x18\x02 \x01(\r\x12\x14\n\x0c\x63urrent_page\x18\x03 \x01(\r\x12\x11\n\tlast_page\x18\x04 \x01(\r\"S\n\x08Products\x12\'\n\npagination\x18\x01 \x01(\x0b\x32\x13.product.Pagination\x12\x1e\n\x04\x64\x61ta\x18\x02 \x03(\x0b\x32\x10.product.Product\"f\n\x07Product\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\r\n\x05price\x18\x03 \x01(\x01\x12\r\n\x05stock\x18\x04 \x01(\r\x12#\n\x08\x63\x61tegory\x18\x05 \x01(\x0b\x32\x11.product.Category\"$\n\x08\x43\x61tegory\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x0c\n\x04name\x18\x02 \x01(\t\"\x10\n\x02Id\x12\n\n\x02id\x18\x01 \x01(\x04\"\x18\n\x06Status\x12\x0e\n\x06status\x18\x01 \x01(\r\"\"\n\x04Page\x12\x11\n\x04page\x18\x01 \x01(\x03H\x00\x88\x01\x01\x42\x07\n\x05_page2\x81\x02\n\x0eProductService\x12/\n\x0bGetProducts\x12\r.product.Page\x1a\x11.product.Products\x12+\n\nGetProduct\x12\x0b.product.Id\x1a\x10.product.Product\x12.\n\rCreateProduct\x12\x10.product.Product\x1a\x0b.product.Id\x12\x32\n\rUpdateProduct\x12\x10.product.Product\x1a\x0f.product.Status\x12-\n\rDeleteProduct\x12\x0b.product.Id\x1a\x0f.product.Statusb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rproduct.proto\x12\x07product\"\x07\n\x05\x45mpty\"V\n\nPagination\x12\r\n\x05total\x18\x01 \x01(\x04\x12\x10\n\x08per_page\x18\x02 \x01(\r\x12\x14\n\x0c\x63urrent_page\x18\x03 \x01(\r\x12\x11\n\tlast_page\x18\x04 \x01(\r\"S\n\x08Products\x12\'\n\npagination\x18\x01 \x01(\x0b\x32\x13.product.Pagination\x12\x1e\n\x04\x64\x61ta\x18\x02 \x03(\x0b\x32\x10.product.Product\"f\n\x07Product\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x0c\n\x04name\x18\x02 \x01(\t\x12\r\n\x05price\x18\x03 \x01(\x01\x12\r\n\x05stock\x18\x04 \x01(\r\x12#\n\x08\x63\x61tegory\x18\x05 \x01(\x0b\x32\x11.product.Category\"$\n\x08\x43\x61tegory\x12\n\n\x02id\x18\x01 \x01(\x04\x12\x0c\n\x04name\x18\x02 \x01(\t\"\x10\n\x02Id\x12\n\n\x02id\x18\x01 \x01(\x04\"\x18\n\x06Status\x12\x0e\n\x06status\x18\x01 \x01(\r\"F\n\x04Page\x12\x11\n\x04page\x18\x01 \x01(\x03H\x00\x88\x01\x01\x12\x15\n\x08per_page\x18\x02 \x01(\x03H\x01\x88\x01\x01\x42\x07\n\x05_pageB\x0b\n\t_per_page2\x81\x02\n\x0eProductService\x12/\n\x0bGetProducts\x12\r.product.Page\x1a\x11.product.Products\x12+\n\nGetProduct\x12\x0b.product.Id\x1a\x10.product.Product\x12.\n\rCreateProduct\x12\x10.product.Product\x1a\x0b.product.Id\x12\x32\n\rUpdateProduct\x12\x10.product.Product\x1a\x0f.product.Status\x12-\n\rDeleteProduct\x12\x0b.product.Id\x1a\x0f.product.Statusb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -36,7 +36,7 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _globals['_STATUS']._serialized_start=368
   _globals['_STATUS']._serialized_end=392
   _globals['_PAGE']._serialized_start=394
-  _globals['_PAGE']._serialized_end=428
-  _globals['_PRODUCTSERVICE']._serialized_start=431
-  _globals['_PRODUCTSERVICE']._serialized_end=688
+  _globals['_PAGE']._serialized_end=464
+  _globals['_PRODUCTSERVICE']._serialized_start=467
+  _globals['_PRODUCTSERVICE']._serialized_end=724
 # @@protoc_insertion_point(module_scope)

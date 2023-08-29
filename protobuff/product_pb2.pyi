@@ -64,7 +64,9 @@ class Status(_message.Message):
     def __init__(self, status: _Optional[int] = ...) -> None: ...
 
 class Page(_message.Message):
-    __slots__ = ["page"]
+    __slots__ = ["page", "per_page"]
     PAGE_FIELD_NUMBER: _ClassVar[int]
+    PER_PAGE_FIELD_NUMBER: _ClassVar[int]
     page: int
-    def __init__(self, page: _Optional[int] = ...) -> None: ...
+    per_page: int
+    def __init__(self, page: _Optional[int] = ..., per_page: _Optional[int] = ...) -> None: ...

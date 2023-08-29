@@ -3,10 +3,11 @@ from protobuff import product_pb2_grpc
 from service.product_service import ProductService
 from configs.database import Database
 import grpc
+import logging
 
 
 def serve():
-    db = Database('python_grpc', 'localhost', 'postgres', 'postgres', '5432')
+    db = Database('grpc', '127.0.0.1', 'postgres', 'postgres', '5432')
     db.connect()
     port = "50051"
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -19,4 +20,5 @@ def serve():
 
 
 if __name__ == '__main__':
+    logging.basicConfig()
     serve()
